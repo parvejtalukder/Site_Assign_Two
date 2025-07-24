@@ -220,7 +220,7 @@ header{
 }
 .img-one {
     position: relative;
-    background-image: url('/assets/deal-bloom.png');
+    background-image: url('../assets/deal-bloom.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -247,7 +247,7 @@ header{
 }
 .img-two{
     position: relative;
-    background-image: url('/assets/deal-ana.png');
+    background-image: url('../assets/deal-ana.png');
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
@@ -274,7 +274,7 @@ header{
     margin: 4;
 }
 .img-three{
-    background-image: url('/assets/deal-zabo.png');
+    background-image: url('../assets/deal-zabo.png');
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
@@ -315,7 +315,7 @@ header{
 }
 .img-b-shop{
     font-size: 28px;
-    font-weight: 600px;
+    font-weight: 600;
 }
 .join-us {
     width: 100%;
@@ -324,16 +324,16 @@ header{
     background-position: center;
     background-size: cover;
     display: flex;
-    background-image: url('./assets/news-letter-bg.png');
+    background-image: url('../assets/news-letter-bg.png');
     align-items: center;
     justify-content: center;
-    background: transparent;
 }
 .join-us-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
 }
 .join-us-body p, .join-us-body h2{
     background-color: transparent;
@@ -343,22 +343,22 @@ header{
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    margin-bottom: 23px;
 }
 .join-us-title{
     font-size: 50px;
     font-weight: bold;
     background-color: transparent;
+    color: white;
 }
 .join-us-input {
     display: flex; 
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    gap: 23px;
     background-color: transparent;
 }
 .join-us-inputbox {
-    flex-grow: 1; 
     padding: 15px 20px; 
     border: none; 
     font-size: 16px; 
@@ -378,9 +378,56 @@ header{
     border: none; 
     border-radius: 0;
     font-size: 16px;
+    font-weight:600;
 }
 .join-us-btn:hover {
     background-color: #e65c00; 
+}
+footer {
+    max-width: 1440px;
+    width: 100%;
+}
+.footer-main{
+    width: 1120px;
+    height: 248px;
+    display: flex;
+    margin: 50px auto;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.about{
+    width: 359px;
+}
+.footer-logo{
+    width: 135px;
+    height: 82px;
+}
+.footer-desc{
+    font-size: 22px;
+    font-weight: normal;
+}
+.manu-items{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.info-items{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.icon-items{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.icon-items li img{
+    width: 36px;
+    height: 34px;
 }
 /*Responsive*/
 @media screen and (max-width: 576px) {
@@ -545,9 +592,51 @@ header{
         font-size: 16px;
         font-weight: 600;
     }
+    .join-us {
+        max-width:100%;
+        height: 276px;
+    }
+    .join-us-title{
+        font-size: 20px;
+    }
+    .join-us-input{
+        width: 321px;
+        height: 100px;
+    }
+    .join-us-inputbox { 
+        width: 201px;
+    }
+    .join-us-btn {
+        height: 50px;
+    }
+    footer {
+        max-width: 576px;
+        width: 100%;
+    }
+    .footer-main{
+        width: 359px;
+        height: 765px;
+        flex-direction: column;
+    }
+    .footer-logo{
+        width: 180px;
+        height: auto;
+    }
+    .footer-desc{
+        font-size: 16px;
+    }
+    .manu-items{
+        margin-left: -38px;
+    }
+    .info-items{
+    margin-left: -38px;
+    }
+    .icon-items{
+    margin-left: -38px;
+    }
 }
-/*Others*/
+/**/
 .tr{
     background-color: transparent;
-    color: #F5F8FF;
+    color: white;
 }
