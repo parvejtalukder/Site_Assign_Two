@@ -317,6 +317,71 @@ header{
     font-size: 28px;
     font-weight: 600px;
 }
+.join-us {
+    width: 100%;
+    height: 533px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    background-image: url('./assets/news-letter-bg.png');
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+.join-us-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.join-us-body p, .join-us-body h2{
+    background-color: transparent;
+}
+.join-us-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.join-us-title{
+    font-size: 50px;
+    font-weight: bold;
+    background-color: transparent;
+}
+.join-us-input {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 23px;
+    background-color: transparent;
+}
+.join-us-inputbox {
+    flex-grow: 1; 
+    padding: 15px 20px; 
+    border: none; 
+    font-size: 16px; 
+    outline: none; 
+    width: 644px;
+    color: #333; 
+    background-color: white;
+    font-weight: 400;
+}
+.join-us-inputbox::placeholder {
+    color: #aaa; 
+}
+.join-us-btn {
+    background-color: #ff6600; 
+    color: white; 
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 0;
+    font-size: 16px;
+}
+.join-us-btn:hover {
+    background-color: #e65c00; 
+}
 /*Responsive*/
 @media screen and (max-width: 576px) {
     .nav{
