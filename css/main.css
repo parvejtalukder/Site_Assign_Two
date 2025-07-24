@@ -154,7 +154,7 @@ header{
     position: relative;
     align-items: center;
     max-width: 1140px;
-    margin: 143.5px auto 120px auto;
+    margin: 210px auto 133px auto;
     display: flex;
     gap: 60px;
     justify-content: space-between;
@@ -178,8 +178,118 @@ header{
 .fp-desc-item{
     margin-top: 20px;
 }
-
-
+.deal-banner{
+    align-items: center;
+    max-width: 1140px;
+    margin: 0px auto 120px auto;
+}
+.deal-header{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.deal-head{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.deal-desc{
+    width: 888px;
+    height: 54px;
+    font-size: 22px;
+    font-weight: 500;
+    align-items: center;
+    margin: 0 auto;
+}
+.deal-body{
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+}
+.img-box-one{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+.img-box-two{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-one{
+    background-image: url('/assets/deal-bloom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    box-shadow: inset 367px 201px rgba(0, 0, 0, 0.4);
+    width: 367px;
+    height: 201px;
+    border-radius: 14px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+.img-one a, .img-one h2{
+    margin: 4;
+}
+.img-two{
+    background-image: url('/assets/deal-ana.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    box-shadow: inset 367px 201px rgba(0, 0, 0, 0.4);
+    width: 367px;
+    height: 201px;
+    border-radius: 14px;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+.img-two a, .img-two h2{
+    margin: 4;
+}
+.img-three{
+    background-image: url('/assets/deal-zabo.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    box-shadow: inset 750px 500px rgba(0, 0, 0, 0.4);
+    width: 753px;
+    height: 423.12px;
+    border-radius: 14px;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+.img-three a, .img-three h2{
+    margin: 4;
+}
+.img-a-head{
+    font-size: 20px;
+    font-weight: bold;
+}
+.img-a-shop{
+    font-size: 16px;
+    font-weight: 600;
+}
+.img-b-head{
+    font-size: 40px;
+    font-weight: bold;
+}
+.img-b-shop{
+    font-size: 28px;
+    font-weight: 600px;
+}
 /*Responsive*/
 @media screen and (max-width: 576px) {
     .nav{
@@ -206,7 +316,7 @@ header{
     }
     .hero-img{
         margin: 0;
-        width: auto;
+        width: 100%;
         height: 245px;
         order: 1;
         object-fit: cover;
@@ -272,7 +382,7 @@ header{
     }
     .fp-lover{
         width: 361px;
-        margin: 42px auto 143px auto;
+        margin: 42px auto 70px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -303,5 +413,49 @@ header{
     .fp-desc-item{
         margin-top: 10px;
     }
-
+    .deal-banner{
+        width: 361px;
+        margin: 0px auto 43px auto;
+    }
+    .deal-header{
+        margin-bottom: 46px;
+    }
+    .deal-head{
+        font-size: 24px;
+    }
+    .deal-desc{
+        width: 336px;
+        height: 68px;
+        font-size: 16px;
+    }
+    .deal-body{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .img-box-one{
+        gap: 20px;
+    }
+    .img-box-two{
+        flex-direction: column;
+    }
+    .img-three{
+        width: 367px;
+        height: 201px;
+    }
+    .img-three a, .img-three h2{
+    margin: 4;
+    }   
+    .img-b-head{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .img-b-shop{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+/*Others*/
+.tr{
+    background-color: transparent;
+    color: #F5F8FF;
 }
