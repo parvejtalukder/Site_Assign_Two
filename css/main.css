@@ -604,10 +604,11 @@ footer {
         height: 100px;
     }
     .join-us-inputbox { 
-        width: 201px;
+        width: 150px;
     }
     .join-us-btn {
         height: 50px;
+        width:auto;
     }
     footer {
         max-width: 576px;
